@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="H7crop : İmage cropper by h7Crop.js ~ Optional movement image cropper" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>H7crop</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/badyguard14/h7Crop">View on GitHub</a>
+
+          <h1 id="project_title">H7crop</h1>
+          <h2 id="project_tagline">İmage cropper by h7Crop.js ~ Optional movement image cropper</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/badyguard14/h7Crop/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/badyguard14/h7Crop/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="h7crop" class="anchor" href="#h7crop"><span class="octicon octicon-link"></span></a>h7Crop</h1>
+
+<p>İmage cropper by h7Crop.js ~ Optional movement image cropper</p>
+
+<h1>
+<a name="required" class="anchor" href="#required"><span class="octicon octicon-link"></span></a>Required</h1>
+
+<ul>
+<li>Jquery js</li>
+<li>
+<p>h7Crop js</p>
+
+<div class="highlight highlight-javascript"><pre><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text/javascript"</span> <span class="nx">src</span><span class="o">=</span><span class="s2">"http://code.jquery.com/jquery-1.10.2.min.js"</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
+<span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text/javascript"</span> <span class="nx">src</span><span class="o">=</span><span class="s2">"h7Crop.js"</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
+</pre></div>
+</li>
+</ul><h1>
+<a name="%C4%B0nstall" class="anchor" href="#%C4%B0nstall"><span class="octicon octicon-link"></span></a>İnstall</h1>
+
+<div class="highlight highlight-javascript"><pre> <span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text/javascript"</span><span class="o">&gt;</span>
+   <span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+       <span class="nx">$</span><span class="p">(</span><span class="s2">"#cropMe"</span><span class="p">).</span><span class="nx">h7Crop</span><span class="p">({</span>
+           <span class="nx">viewPortId</span><span class="o">:</span><span class="s2">"corpr"</span><span class="p">,</span> <span class="c1">// or default</span>
+           <span class="nx">viewPortW</span><span class="o">:</span><span class="mi">500</span><span class="p">,</span> <span class="c1">//default **500**</span>
+           <span class="nx">viewPortH</span><span class="o">:</span><span class="mi">200</span><span class="p">,</span> <span class="c1">//default **250**</span>
+           <span class="nx">viewButton</span><span class="o">:</span><span class="kc">false</span><span class="p">,</span> <span class="c1">//default **true**</span>
+           <span class="nx">ratio</span><span class="o">:</span><span class="mf">0.75</span><span class="p">,</span> <span class="c1">//default **1**</span>
+           <span class="nx">maskImage</span><span class="o">:</span><span class="s2">"mask.png"</span> <span class="c1">//default **null**</span>
+       <span class="p">},</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
+         <span class="nx">$</span><span class="p">(</span><span class="s2">"#cropdata"</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span><span class="s2">"x=&gt;"</span><span class="o">+</span><span class="nx">e</span><span class="p">.</span><span class="nx">x</span><span class="o">+</span><span class="s2">"\ny=&gt;"</span><span class="o">+</span><span class="nx">e</span><span class="p">.</span><span class="nx">y</span><span class="o">+</span><span class="s2">"\nw=&gt;"</span><span class="o">+</span><span class="nx">e</span><span class="p">.</span><span class="nx">w</span><span class="o">+</span><span class="s2">"\nh=&gt;"</span><span class="o">+</span><span class="nx">e</span><span class="p">.</span><span class="nx">h</span><span class="p">);</span>
+       <span class="p">});</span>
+    <span class="p">});</span>
+ <span class="o">&lt;</span><span class="err">/script&gt;   </span>
+
+<span class="o">&lt;</span><span class="nx">div</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"cropdata"</span><span class="o">&gt;&lt;</span><span class="err">/div&gt;</span>
+<span class="o">&lt;</span><span class="nx">img</span> <span class="nx">src</span><span class="o">=</span><span class="s2">"simple.jpg"</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"cropMe"</span> <span class="o">/&gt;</span>
+</pre></div>
+
+<h1>
+<a name="options--detail" class="anchor" href="#options--detail"><span class="octicon octicon-link"></span></a>Options &amp; Detail</h1>
+
+<pre><code>**viewPortId**:"def", **optional** (value or default) viewport id
+**viewPortW**: 500, **optional** (value or default 500) viewport width
+**viewPortH**: 250, **optional** (value or default 250) viewport height
+**ratio**: 1, **optional** (value or default 1) image scale ratio
+**viewButton**:true, **optional** (default true or value false) buttons view
+**maskImage**:null  **optional** (default null) mask image link
+</code></pre>
+
+<h1>
+<a name="function-detail" class="anchor" href="#function-detail"><span class="octicon octicon-link"></span></a>Function Detail</h1>
+
+<pre><code>function(e){
+e.x,
+e.y
+}
+**e** by cordination object have by param x,y,w,h
+**x** =&gt; image selected x
+**y** =&gt; image selected y
+**w** =&gt; image selected width
+**h** =&gt; image selected height
+</code></pre>
+
+<h1>
+<a name="preview" class="anchor" href="#preview"><span class="octicon octicon-link"></span></a>Preview</h1>
+
+<p><img src="https://github.com/badyguard14/h7Crop/blob/master/public_html/se.jpg?raw=true" alt="crop image"></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">H7crop maintained by <a href="https://github.com/badyguard14">badyguard14</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
