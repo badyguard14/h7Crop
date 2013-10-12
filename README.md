@@ -58,20 +58,3 @@ e.y
 **h** => image selected height
 ```
 
-Preview
-======
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="https://raw.github.com/badyguard14/h7Crop/master/public_html/h7Crop.js"></script>
- <script type="text/javascript">
-   $(function(){
-       $("#cropMe").h7Crop({
-           viewPortId:"corpr",
-           viewPortW:500,
-           viewPortH:200
-       },function(e){
-         $("#cropdata").text("x=>"+e.x+"\ny=>"+e.y+"\nw=>"+e.w+"\nh=>"+e.h);
-       });
-    });
- </script> 
-<div id="cropdata"></div>
-<img src="https://github.com/badyguard14/h7Crop/blob/master/public_html/se.jpg?raw=true" id="cropMe" />
