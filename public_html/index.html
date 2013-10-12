@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="h7Crop.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#cropme").h7Crop({
+                viewPortW: 500,
+                viewPortH: 200,
+            }, function(e) {
+                $("#data").html("x=>" + e.x + "\ny=>" + e.y + "\nw=>" + e.w + "\nh=>" + e.h);
+            });
+        });
+    </script>
+</head>
+<body>
+
+<img src="se.jpg" id="cropme"/>
+
+<p id="data"></p>
+</body>
+</html>
