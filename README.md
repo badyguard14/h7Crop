@@ -2,6 +2,7 @@ h7Crop
 ======
 
 İmage cropper by h7Crop.js ~ Optional movement image cropper
+Resize image by buttons or mousewhell
 
 Required
 =======
@@ -44,7 +45,7 @@ Options & Detail
 **viewButton**:true, **optional** (default true or value false) buttons view
 **maskImage**:null  **optional** (default null) mask image link
 ```
-Function Detail
+Functions Detail
 ===============
 ```
 function(e){
