@@ -60,4 +60,5 @@ e.y
 ```
 Demo
 =====
-http://jsfiddle.net/badyguard14/9SWdh/
+*[Demo Page](http://rawgithub.com/badyguard14/h7Crop/master/public_html/index.html)
+
