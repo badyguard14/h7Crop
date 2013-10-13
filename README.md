@@ -57,4 +57,6 @@ e.y
 **w** => image selected width
 **h** => image selected height
 ```
-
+Demo
+=====
+http://jsfiddle.net/badyguard14/9SWdh/
