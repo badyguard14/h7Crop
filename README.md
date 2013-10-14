@@ -13,6 +13,9 @@ Required
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="h7Crop.js"></script>
  ```
+Support
+======
+İ.E7 + and Modern Browser
 
 İnstall
 ======
